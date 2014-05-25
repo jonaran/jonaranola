@@ -15,27 +15,27 @@ img {
 }
 .nav {
   background-color: #ffb25f;
-  height: auto;
+  height: 50px;
 }
 .nav a {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   padding: 14px 10px;
   font-family: opensans;
   text-transform: uppercase;
   text-decoration: none;
 }
-.nav a:hover {
+#navhid a:hover {
   color: #fff;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   padding: 14px 10px;
   font-family: opensans;
   text-transform: uppercase;
   text-decoration: none;
   border-bottom-width: 5px;
-  border-bottom-color: #fff;
+  border-bottom-color: #5fb6a5;
   border-bottom-style: solid;
 }
 
@@ -94,10 +94,15 @@ body{
   font-family: opensans;
 }
 .blogs, .resumeOn{
-  color: #828281;
+  color: #fff;
   margin: 2px auto;
   padding: 15px;
-  background-color: #f7f7f7;
+  background-color: #5ab9a3;
+}
+.resumeOn{
+  -webkit-column-count:2; /* Chrome, Safari, Opera */
+  -moz-column-count:2; /* Firefox */
+  column-count:2;
 }
 .resume{
   color: #828281;
@@ -117,7 +122,7 @@ body{
   font-family: opensans;
 }
 .gallery img{
-  width: 230px;
+  width: 180px;
   height: auto;
 }
 
@@ -126,6 +131,12 @@ body{
   margin: 2px auto;
   padding: 15px;
   background-color: #ffb25f;
+}
+.galleryhighlighted{
+  color: #fff;
+  margin: 2px auto;
+  padding: 15px;
+  background-color: #5fb6a5;
 }
 .navright{
   color: #fff;
@@ -145,7 +156,7 @@ body{
   border-width: 1px;
   padding: 5px 5px;
   margin: 3% auto;
-  width: 400px;
+  width: auto;
 
 }
 .boxB{
@@ -155,7 +166,7 @@ body{
   border-width: 1px;
   padding: 5px 5px;
   margin: 3% auto;
-  width: 400px;
+  width: auto;
 
 }
 .boxAhighlighted{
@@ -175,7 +186,7 @@ a.boxA{
 }
 a.boxB{
   text-decoration: none;
-  color:  #ff9a2d;
+  color:  #fff;
 }
 a.boxA:hover,a.boxB:hover{
   background-color: #fff;
@@ -221,4 +232,16 @@ a.boxA:hover,a.boxB:hover{
   background-color: #fdfaf7;
   height: 10px;
   width: auto;
+}
+@media only screen and (min-width: 150px) and (max-width:600px){
+
+    #navhid{
+      display: none;
+    }
+}
+@media only screen and (min-width: 150px) and (max-width:500px){
+
+    .name{
+      font-size: 60px;
+    }
 }
