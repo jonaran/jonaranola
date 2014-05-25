@@ -10,7 +10,7 @@ $(document).ready(function(){
 
         });
         $('.gallery').hover(function(){
-        	$(this).toggleClass('blogshighlighted');
+        	$(this).toggleClass('galleryhighlighted');
 
         });
 
