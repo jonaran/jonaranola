@@ -1,5 +1,14 @@
 @font-face { font-family: lobster; src: url('Lobster 1.4.otf'); } 
 @font-face { font-family: opensans; src: url('OpenSans-Light.ttf'); } 
+@font-face { font-family: argh; src: url('Aaargh_0.ttf'); } 
+
+span.topText{
+  font-family: argh;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
 img {
     position: relative;
     display: inline-block;
@@ -44,7 +53,7 @@ img {
 }
 
 .jumbotron {
-  background-color: #ffffff;
+  background-color: #000000;
   height: auto;
 }
 
@@ -99,6 +108,13 @@ body{
   padding: 15px;
   background-color: #5ab9a3;
 }
+
+.blogs, .resumeOn{
+  color: #fff;
+  margin: 2px auto;
+  padding: 15px;
+  background-color: #5ab9a3;
+}
 .resumeOn{
   -webkit-column-count:2; /* Chrome, Safari, Opera */
   -moz-column-count:2; /* Firefox */
@@ -122,7 +138,7 @@ body{
   font-family: opensans;
 }
 .gallery img{
-  width: 180px;
+  width:100%;
   height: auto;
 }
 
@@ -169,6 +185,15 @@ body{
   width: auto;
 
 }
+.boxC{
+
+  background-color: #5ab9a3;
+  border-radius: 18px;
+  padding: 5px 5px;
+  margin: 3% auto;
+  width: auto;
+  font-size: 30px;
+}
 .boxAhighlighted{
   background-color: #f7f7f7;
   border-color: #fff;
@@ -179,11 +204,16 @@ body{
   width: 400px;
 
 }
-
 a.boxA{
   text-decoration: none;
   color:  #fff;
 }
+
+a.boxC{
+  text-decoration: none;
+  color:  #fff;
+}
+
 a.boxB{
   text-decoration: none;
   color:  #fff;
@@ -197,6 +227,17 @@ a.boxA:hover,a.boxB:hover{
   margin: 3% auto;
   width: 400px;
   color: #ffb25f;
+}
+
+a.boxC:hover{
+  background-color: #fff;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 5px;
+  margin: 3% auto;
+  width: 400px;
+  color: #5ab9a3;
 }
 .orangeShade-one{
   background-color: #ff9a2d;
@@ -233,6 +274,20 @@ a.boxA:hover,a.boxB:hover{
   height: 10px;
   width: auto;
 }
+.blog{
+  background: #5ab9a3;
+}
+h3{
+  font-size: 30px;
+}
+.blogFoot{
+  background-color: #016678;
+  height: auto;
+}
+   .blogo img {
+      width: 160px; 
+      height: auto;
+    }
 @media only screen and (min-width: 150px) and (max-width:600px){
 
     #navhid{
@@ -243,5 +298,26 @@ a.boxA:hover,a.boxB:hover{
 
     .name{
       font-size: 60px;
+    }
+    span.topText{
+      font-family: argh;
+      color: #fff;
+      font-size: 8px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+   .blogo img {
+      position: relative;
+      width: 80px;
+      height: auto;
+    }
+    .boxC{
+
+      background-color: #5ab9a3;
+      border-radius: 18px;
+      padding: 5px 5px;
+      margin: 3% auto;
+      width: auto;
+      font-size: 16px;
     }
 }
