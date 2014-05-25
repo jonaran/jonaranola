@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+
+
         $('img.icons').hover(function(){
         	$(this).toggleClass('iconshighlighted');
         });
@@ -39,11 +42,20 @@ $(document).ready(function(){
 		    if (FOLLOW) { $(document).on("mousemove", "." + CLS_ON, showAt); }
 	}());
 
-    (function() {
-    $('#nav-wrapper').height($("#nav").height());
-    
-    $('#nav').affix({
-        offset: { top: $('#nav').offset().top }
-   	 });
-	});
+
+    var menu = $('.nav');
+    var origOffsetY = menu.offset().top;
+    function scroll() {
+        if ($(window).scrollTop() >= origOffsetY) {
+            $('.nav').addClass('navbar-fixed-top');
+            $('.content').addClass('menu-padding');
+        } else {
+            $('.nav').removeClass('navbar-fixed-top');
+            $('.content').removeClass('menu-padding');
+        }
+
+
+    }
+
+    document.onscroll = scroll;
 });
