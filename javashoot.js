@@ -7,6 +7,7 @@ $(document).ready(function(){
         });
         $('.blogs').hover(function(){
         	$(this).toggleClass('blogshighlighted');
+        	$('.boxB').toggleClass('blogshighlighted');
 
         });
         $('.gallery').hover(function(){
